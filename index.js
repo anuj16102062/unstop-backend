@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const roomRoutes = require("../server/routes/room");
+const roomRoutes = require("./routes/room");
 app.use(cors()); // Enable CORS for all routes
 app.use(express.json());
 app.use("/api", roomRoutes);
